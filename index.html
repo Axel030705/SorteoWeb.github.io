@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="NombreEmpresa">Sorteo</p>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#acerca-de">Acerca de</a>
+                <a href="#registrarse">Registrarse</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <div id="slider" class="slider-container">
+            <button class="prev">&#10094;</button>
+            <div class="img-container">
+                <div class="slide"><img src="img/Iphone.png" alt="Imagen 1">
+                    <h3>Iphone 15 pro max</h3>
+                </div>
+                <div class="slide"><img src="img/Iphone 13.png">
+                    <h3>Iphone 13 pro </h3>
+                </div>
+                <div class="slide"><img src="img/Proteina.png">
+                    <h3>Whey Protein Gold Standard</h3>
+                </div>
+                <div class="slide"><img src="img/Dinero.png">
+                    <h3>Mil varotes</h3>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="acerca-de">
+        <div class="container">
+            <h2>Contador Regresivo</h2>
+            <div id="contador">
+                <div class="circle" id="days"><span id="daysText"></span><br>Días</div>
+                <div class="circle" id="hours"><span id="hoursText"></span><br>Horas</div>
+                <div class="circle" id="minutes"><span id="minutesText"></span><br>Minutos</div>
+                <div class="circle" id="seconds"><span id="secondsText"></span><br>Segundos</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registrarse">
+        <div class="container2">
+            <h2>Regístrate</h2>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="[0-9]{10}" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-ticket-alt"></i>
+                    <input type="number" id="boletos" name="boletos" placeholder="Cantidad de boletos" min="1" max="10" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-money-check-alt"></i>
+                    <select id="metodoPago" name="metodoPago" required>
+                        <option value="" disabled selected hidden>Método de Pago</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="transferencia">Transferencia</option>
+                    </select>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/18c8581f36.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
