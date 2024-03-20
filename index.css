@@ -282,14 +282,14 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #19A7CE;
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #1388a8;
 }
 
 /* Iconos Font Awesome */
